@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <!-- Be explicit: makes CPM work consistently across NuGet versions -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- Optional but good for repeatable builds -->
+    <EnablePackageLockFile>true</EnablePackageLockFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Define all shared versions here -->
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageVersion Include="MediatR" Version="12.2.0" />
+    <PackageVersion Include="Polly" Version="8.4.2" />
+    <PackageVersion Include="FluentValidation" Version="11.9.0" />
+    <!-- etc -->
+  </ItemGroup>
+</Project>
+
